@@ -67,6 +67,8 @@
 							<li>光标位于文本框内，F11 全屏（Mac Ctrl-B），Esc 退出全屏。</li>
 							<br/>
 							<li>光标位于文本框内，Ctrl-F / Cmd-F 搜索，Ctrl-G / Cmd-G 查找下一个，Shift-Ctrl-G / Shift-Cmd-G 查找上一个，Shift-Ctrl-F / Cmd-Option-F 替换，Alt-G 跳到指定行。</li>
+							<br/>
+							<li>点击 [Python REPL] 可以跳转到 Pyodide 的交互式 Python 环境。</li>
 						</span>
 					</div>
 					<select id="code-mode" class="selector" onchange="setLangMode(event)">
@@ -102,10 +104,10 @@ if __name__ == "__main__":
 					</div>
 				</div>
 				<p style="text-align: center; font-size: 20px; color: #1a2e39;" title="Python 交互式运行环境">
-					Python REPL
+					<a href="https://pyodide.org/en/stable/console.html" target="_blank">Python REPL</a>
 				</p>
 				<div class="pyrepl">
-					<py-repl id="my-repl" auto-generate="true"> </py-repl>
+					<py-repl id="my-repl" auto-generate="true" output-mode="replace"> </py-repl>
 				</div>
 				<div class="back-to-top fa-solid fa-circle-chevron-up" onclick="backToTop()"></div>
 				<div class="back-to-bottom fa-solid fa-circle-chevron-down" onclick="backToBottom()"></div>
