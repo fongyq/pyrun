@@ -1,6 +1,5 @@
 body {
     background-color: rgba(247, 247, 249, 0.2);
-    font-size: 20px;
 }
 
 #page-container {
@@ -35,7 +34,7 @@ body {
 }
 
 .CodeMirror{
-    font-family: consolas, monospace;
+    font-family: monospace, Consolas, 'Courier New', Courier;
     font-size: 18px;
     height: 90%;
 }
@@ -47,7 +46,7 @@ body {
     text-align: center;
     width: 6.4rem;
     height: 1.5rem;
-    font-family: Consolas, monospace;
+    font-family: monospace, Consolas, 'Courier New', Courier;
     font-size: 0.8rem;
     font-weight: bold;
     color: #333;
@@ -80,7 +79,7 @@ select:hover {
     color: #d0c8c8;
     text-align: left;
     font-size: 1rem;
-    font-family: Consolas, monospace;
+    font-family: monospace, Consolas, 'Courier New', Courier;
     padding: 20px 20px;
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
@@ -123,5 +122,11 @@ select:hover {
     width: 80%;
     margin: auto auto;
     font-family: monospace, Consolas, 'Courier New', Courier;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.output {
+    font-size: 16px;
+    font-family: monospace, Consolas, 'Courier New', Courier;
+    line-height: 20px;
 }

@@ -1,182 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>pyrun</title>
+        <title>pyrun</title>
 
-		<link rel="icon" href="./magnum.ico" type="image/x-icon">
+        <link rel="icon" href="./magnum.ico" type="image/x-icon">
 
-		<!-- pyscript -->
-		<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <!-- pyscript -->
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-		<!-- 第三方 python 包 -->
-		<py-env>
-			- numpy
-			- matplotlib
-		</py-env>
+        <!-- 第三方 python 包 -->
+        <py-env>
+            - numpy
+            - matplotlib
+        </py-env>
 
-		<!-- mode -->
-		<script src="./codemirror/codemirror-5.65.16/lib/codemirror.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/perl/perl.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/python/python.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/clike/clike.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/shell/shell.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/sql/sql.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/markdown/markdown.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/gfm/gfm.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/rst/rst.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/mode/overlay.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/htmlmixed/htmlmixed.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/xml/xml.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/css/css.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/mode/javascript/javascript.js"></script>
-		<!-- theme -->
-		<link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/lib/codemirror.css" >
-		<link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/abbott.css" >
-		<link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/elegant.css" >
-		<link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/eclipse.css" >
-		<link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/mdn-like.css" >
-		<!-- 代码折叠 -->
-		<link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/fold/foldgutter.css"/>
-		<script src="./codemirror/codemirror-5.65.16/addon/fold/foldcode.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/fold/foldgutter.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/fold/brace-fold.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/fold/comment-fold.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/fold/indent-fold.js"></script>
-		<!-- search -->
-		<link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/dialog/dialog.css"/>
-		<script src="./codemirror/codemirror-5.65.16/addon/dialog/dialog.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/search/search.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/search/searchcursor.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/search/jump-to-line.js"></script>
-		<script src="./codemirror/codemirror-5.65.16/addon/search/match-highlighter.js"></script>
-		<!-- 全屏模式 -->
-		<link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/display/fullscreen.css">
-		<script src="./codemirror/codemirror-5.65.16/addon/display/fullscreen.js"></script>
-		<!-- 括号匹配 -->
-		<script src="./codemirror/codemirror-5.65.16/addon/edit/matchbrackets.js"></script>
+        <!-- mode -->
+        <script src="./codemirror/codemirror-5.65.16/lib/codemirror.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/perl/perl.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/python/python.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/clike/clike.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/shell/shell.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/sql/sql.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/markdown/markdown.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/gfm/gfm.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/rst/rst.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/mode/overlay.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/htmlmixed/htmlmixed.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/xml/xml.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/css/css.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/mode/javascript/javascript.js"></script>
+        <!-- theme -->
+        <link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/lib/codemirror.css" >
+        <link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/abbott.css" >
+        <link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/elegant.css" >
+        <link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/eclipse.css" >
+        <link rel="stylesheet" type="text/css" href="./codemirror/codemirror-5.65.16/theme/mdn-like.css" >
+        <!-- 代码折叠 -->
+        <link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/fold/foldgutter.css"/>
+        <script src="./codemirror/codemirror-5.65.16/addon/fold/foldcode.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/fold/foldgutter.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/fold/brace-fold.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/fold/comment-fold.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/fold/indent-fold.js"></script>
+        <!-- search -->
+        <link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/dialog/dialog.css"/>
+        <script src="./codemirror/codemirror-5.65.16/addon/dialog/dialog.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/search/search.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/search/searchcursor.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/search/jump-to-line.js"></script>
+        <script src="./codemirror/codemirror-5.65.16/addon/search/match-highlighter.js"></script>
+        <!-- 全屏模式 -->
+        <link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/display/fullscreen.css">
+        <script src="./codemirror/codemirror-5.65.16/addon/display/fullscreen.js"></script>
+        <!-- 括号匹配 -->
+        <script src="./codemirror/codemirror-5.65.16/addon/edit/matchbrackets.js"></script>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-		
-		<link rel="stylesheet" href="./custom.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+        
+        <link rel="stylesheet" href="./custom.css"/>
 
-	</head>
-	<body>
-		<div id="page-container">
-			<div id="content-wrap">
-				<br>
-				<div style="text-align:center;">
-					<div class="tooltip fa-regular fa-question-circle">
-						<span class="tooltiptext">
-							<li>光标位于文本框内，F11 全屏（Mac Ctrl-B），Esc 退出全屏。</li>
-							<br/>
-							<li>光标位于文本框内，Ctrl-F / Cmd-F 搜索，Ctrl-G / Cmd-G 查找下一个，Shift-Ctrl-G / Shift-Cmd-G 查找上一个，Shift-Ctrl-F / Cmd-Option-F 替换，Alt-G 跳到指定行。</li>
-							<br/>
-							<li>点击「Python REPL」可以跳转到 Pyodide 的 Python 交互式解释器。</li>
-						</span>
-					</div>
-					<select id="code-mode" class="selector" onchange="setLangMode(event)">
-						<option value="text/x-python" selected>Python</option>
-						<option value="text/x-csrc">C</option>
-						<option value="text/x-c++src">C++</option>
-						<option value="text/x-java">Java</option>
-						<option value="text/x-sh">Shell</option>
-						<option value="text/x-sql">SQL</option>
-						<option value="text/x-markdown">Markdown</option>
-						<option value="text/x-rst">Rst</option>
-						<option value="text/html">HTML</option>
-						<option value="text/css">CSS</option>
-						<option value="text/javascript">JavaScript</option>
-						<option value="text/x-perl">Perl</option>
-						<option value="text/plain">Plain</option>
-					</select>
-					<select id="code-theme" class="selector" onchange="setTheme(event)">
-						<option value="abbott">Abbott</option>
-						<option value="eclipse">Eclipse</option>
-						<option value="elegant">Elegant</option>
-						<option value="mdn-like" selected>Mdn-like</option>
-					</select>
-				</div>
-				<br>
-				<div class="editor-container">
-					<div class="editor">
-						<textarea id="code" name="code">
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <br>
+                <div style="text-align:center;">
+                    <div class="tooltip fa-regular fa-question-circle">
+                        <span class="tooltiptext">
+                            <li>光标位于文本框内，F11 全屏（Mac Ctrl-B），Esc 退出全屏。</li>
+                            <br/>
+                            <li>光标位于文本框内，Ctrl-F / Cmd-F 搜索，Ctrl-G / Cmd-G 查找下一个，Shift-Ctrl-G / Shift-Cmd-G 查找上一个，Shift-Ctrl-F / Cmd-Option-F 替换，Alt-G 跳到指定行。</li>
+                            <br/>
+                            <li>点击「Python REPL」可以跳转到 Pyodide 的 Python 交互式解释器。</li>
+                        </span>
+                    </div>
+                    <select id="code-mode" class="selector" onchange="setLangMode(event)">
+                        <option value="text/x-python" selected>Python</option>
+                        <option value="text/x-csrc">C</option>
+                        <option value="text/x-c++src">C++</option>
+                        <option value="text/x-java">Java</option>
+                        <option value="text/x-sh">Shell</option>
+                        <option value="text/x-sql">SQL</option>
+                        <option value="text/x-markdown">Markdown</option>
+                        <option value="text/x-rst">Rst</option>
+                        <option value="text/html">HTML</option>
+                        <option value="text/css">CSS</option>
+                        <option value="text/javascript">JavaScript</option>
+                        <option value="text/x-perl">Perl</option>
+                        <option value="text/plain">Plain</option>
+                    </select>
+                    <select id="code-theme" class="selector" onchange="setTheme(event)">
+                        <option value="abbott">Abbott</option>
+                        <option value="eclipse">Eclipse</option>
+                        <option value="elegant">Elegant</option>
+                        <option value="mdn-like" selected>Mdn-like</option>
+                    </select>
+                </div>
+                <br>
+                <div class="editor-container">
+                    <div class="editor">
+                        <textarea id="code" name="code">
 import sys
 
 if __name__ == "__main__":
-	print(sys.version)</textarea>
-					</div>
-				</div>
-				<p style="text-align: center; font-size: 20px; color: #1a2e39;" title="Python 交互式运行环境">
-					<a href="https://pyodide.org/en/stable/console.html" target="_blank">Python REPL</a>
-				</p>
-				<div class="pyrepl">
-					<py-repl id="my-repl" auto-generate="true"> </py-repl>
-				</div>
-				<div class="back-to-top fa-solid fa-circle-chevron-up" onclick="backToTop()"></div>
-				<div class="back-to-bottom fa-solid fa-circle-chevron-down" onclick="backToBottom()"></div>
-			</div>
-			<footer id="footer"><span style="color: grey;">我是有底线的</footer>
-		</div>
-		<script>
-			var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-				lineNumbers: true,
-				indentUnit: 4,
-				mode: 'text/x-python',
-				matchBrackets: true,
-				theme: 'mdn-like',
-				styleActiveLine: true,
-				lineWrapping:true,
-				foldGutter: true,
-				gutters:["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
-				extraKeys: {
-					"Ctrl-B": function(cm) {
-						cm.setOption("fullScreen", !cm.getOption("fullScreen"));
-					},
-					"F11": function(cm) {
-						cm.setOption("fullScreen", !cm.getOption("fullScreen"));
-					},
-					"Esc": function(cm) {
-						if(cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
-					}
-				}
-			});
-			function setLangMode(event) {
-				var mode = event.target.value;
-				editor.setOption("mode", mode);
-			}
-			function setTheme(event) {
-				var theme = event.target.value;
-				editor.setOption("theme", theme);
-			}
-			function backToTop() {
-				window.scroll({
-					top: 0,
-					// behavior: "smooth"
-				})
-			}
-			function backToBottom() {
-				window.scroll({
-					top: document.body.scrollHeight,
-					// behavior: "smooth"
-				})
-			}
-			window.addEventListener("scroll", function() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					document.querySelector(".back-to-top").classList.add("show");
-				} else {
-					document.querySelector(".back-to-top").classList.remove("show");
-				}
-			});
-			window.addEventListener("scroll", function() {
-				if (window.innerHeight + window.scrollY + 500 >= document.body.offsetHeight) {
-					document.querySelector(".back-to-bottom").classList.remove("show");
-				} else {
-					document.querySelector(".back-to-bottom").classList.add("show");
-				}
-			});
-		</script>
-	</body>
+    print(sys.version)</textarea>
+                    </div>
+                </div>
+                <p style="text-align: center; font-size: 20px; color: #1a2e39;" title="Python 交互式运行环境">
+                    <a href="https://pyodide.org/en/stable/console.html" target="_blank">Python REPL</a>
+                </p>
+                <div class="pyrepl">
+                    <py-repl id="my-repl" auto-generate="true"> </py-repl>
+                </div>
+                <div class="back-to-top fa-solid fa-circle-chevron-up" onclick="backToTop()"></div>
+                <div class="back-to-bottom fa-solid fa-circle-chevron-down" onclick="backToBottom()"></div>
+            </div>
+            <footer id="footer"><span style="color: grey;">我是有底线的</footer>
+        </div>
+        <script>
+            var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+                lineNumbers: true,
+                indentUnit: 4,
+                mode: 'text/x-python',
+                matchBrackets: true,
+                theme: 'mdn-like',
+                styleActiveLine: true,
+                lineWrapping:true,
+                foldGutter: true,
+                gutters:["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+                extraKeys: {
+                    "Ctrl-B": function(cm) {
+                        cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+                    },
+                    "F11": function(cm) {
+                        cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+                    },
+                    "Esc": function(cm) {
+                        if(cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+                    }
+                }
+            });
+            function setLangMode(event) {
+                var mode = event.target.value;
+                editor.setOption("mode", mode);
+            }
+            function setTheme(event) {
+                var theme = event.target.value;
+                editor.setOption("theme", theme);
+            }
+            function backToTop() {
+                window.scroll({
+                    top: 0,
+                    // behavior: "smooth"
+                })
+            }
+            function backToBottom() {
+                window.scroll({
+                    top: document.body.scrollHeight,
+                    // behavior: "smooth"
+                })
+            }
+            window.addEventListener("scroll", function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.querySelector(".back-to-top").classList.add("show");
+                } else {
+                    document.querySelector(".back-to-top").classList.remove("show");
+                }
+            });
+            window.addEventListener("scroll", function() {
+                if (window.innerHeight + window.scrollY + 500 >= document.body.offsetHeight) {
+                    document.querySelector(".back-to-bottom").classList.remove("show");
+                } else {
+                    document.querySelector(".back-to-bottom").classList.add("show");
+                }
+            });
+        </script>
+    </body>
 </html>
