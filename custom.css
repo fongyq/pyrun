@@ -131,7 +131,7 @@ select:hover {
     border-radius: 5px;
 }
 .repl-hint:hover {
-    box-shadow: 0px 0px 3px 3px #6d0404;
+    box-shadow: 0px 0px 3px 3px #04546d;
 }
 .pyrepl {
     width: 80%;
