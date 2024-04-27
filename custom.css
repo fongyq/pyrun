@@ -120,12 +120,12 @@ select:hover {
 }
 
 .repl-hint {
-    width: 140px;
-    height: 30px;
+    width: 100px;
+    height: 20px;
     margin: 0 auto;
     text-align: center; 
     font-family: monospace, Consolas, 'Courier New', Courier;
-    font-size: 18px; 
+    font-size: 0.8rem; 
     color: #1a2e39;
     background-color: rgba(0, 139, 139, 0.1);
     border-radius: 5px;
