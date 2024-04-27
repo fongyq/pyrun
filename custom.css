@@ -119,13 +119,23 @@ select:hover {
     display: block;
 }
 
+.repl-hint {
+    width: 140px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center; 
+    font-size: 20px; 
+    color: #1a2e39;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 5px;
+}
 .pyrepl {
     width: 80%;
     margin: auto auto;
     font-family: monospace, Consolas, 'Courier New', Courier;
     font-size: 18px;
 }
-
+ /* repl output */
 .output {
     font-size: 16px;
     font-family: monospace, Consolas, 'Courier New', Courier;
