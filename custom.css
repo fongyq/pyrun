@@ -25,7 +25,7 @@ body {
     display: flex;
     width: 78%;
     margin: 0 auto;
-    height: 45vh;
+    height: 48vh;
 }
 .editor {
     flex: 1;
@@ -120,12 +120,12 @@ select:hover {
 }
 
 .repl-hint {
-    width: 150px;
+    width: 140px;
     height: 30px;
     margin: 0 auto;
     text-align: center; 
     font-family: monospace, Consolas, 'Courier New', Courier;
-    font-size: 20px; 
+    font-size: 18px; 
     color: #1a2e39;
     background-color: rgba(0, 139, 139, 0.1);
     border-radius: 5px;
