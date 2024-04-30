@@ -11,6 +11,12 @@
         <!-- pyscript -->
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+        <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+
+        <!-- <link rel="stylesheet" href="./pyscript/releases/2022.06.1/pyscript.css" />
+        <script defer src="./pyscript/releases/2022.06.1/pyscript.js"></script> -->
         <!-- 第三方 python 包 -->
         <py-env>
             - numpy
@@ -139,7 +145,7 @@ fig
 					<a href="https://pyodide.org/en/stable/console.html" target="_blank">Python REPL</a>
 				</p>
                 <div class="pyrepl">
-                    <py-repl id="my-repl" auto-generate="true"> </py-repl>
+                    <py-repl id="my-repl" auto-generate="true" output-mode="replace"> </py-repl>
                 </div>
                 <div class="back-to-top fa-solid fa-circle-chevron-up" onclick="backToTop()"></div>
                 <div class="back-to-bottom fa-solid fa-circle-chevron-down" onclick="backToBottom()"></div>
