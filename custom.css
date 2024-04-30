@@ -140,9 +140,26 @@ select:hover {
     font-family: monospace, Consolas, 'Courier New', Courier;
     font-size: 18px;
 }
+.py-repl-editor {
+    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-size: 18px;
+}
  /* repl output */
 .output {
     font-size: 16px;
     font-family: monospace, Consolas, 'Courier New', Courier;
     line-height: 20px;
+}
+.py-repl-output {
+    font-size: 16px;
+    font-family: monospace, Consolas, 'Courier New', Courier;
+    line-height: 20px;
+}
+/* .py-terminal {
+    display: none;
+} */
+
+a {
+    /* 去掉下划线 */
+    text-decoration: none;
 }
