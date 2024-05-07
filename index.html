@@ -69,6 +69,9 @@
         <!-- 括号匹配 -->
         <script src="./codemirror/codemirror-5.65.16/addon/edit/matchbrackets.js"></script>
 
+        <link rel="stylesheet" href="./codemirror/codemirror-5.65.16/addon/scroll/simplescrollbars.css">
+        <script src="./codemirror/codemirror-5.65.16/addon/scroll/simplescrollbars.js"></script>
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
         
         <link rel="stylesheet" href="./custom.css"/>
@@ -164,12 +167,13 @@ fig
         <script>
             var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
                 lineNumbers: true,
+                lineWrapping: false,
+                scrollbarStyle: "overlay",
                 indentUnit: 4,
                 mode: 'text/x-python',
                 matchBrackets: true,
                 theme: 'mdn-like',
                 styleActiveLine: true,
-                lineWrapping:true,
                 foldGutter: true,
                 gutters:["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
                 extraKeys: {
