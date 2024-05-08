@@ -39,6 +39,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     height: 90%;
+    border: 1px solid rgba(39, 64, 101, 0.3);
 }
 
 .d2h-diff-table {
