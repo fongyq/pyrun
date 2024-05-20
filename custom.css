@@ -35,7 +35,7 @@ body {
 }
 
 .CodeMirror{
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     font-size: 18px;
     line-height: 24px;
     height: 90%;
@@ -50,7 +50,7 @@ body {
     text-align: center;
     width: 6.4rem;
     height: 1.5rem;
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     font-size: 0.8rem;
     font-weight: bold;
     color: #333;
@@ -83,7 +83,7 @@ select:hover {
     color: #d0c8c8;
     text-align: left;
     font-size: 1rem;
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     padding: 20px 20px;
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
@@ -127,7 +127,7 @@ select:hover {
     height: 25px;
     margin: 0 auto;
     text-align: center; 
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     font-size: 1rem; 
     color: #1a2e39;
     background-color: rgba(0, 139, 139, 0.1);
@@ -139,22 +139,22 @@ select:hover {
 .pyrepl {
     width: 80%;
     margin: auto auto;
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     font-size: 18px;
 }
 .py-repl-editor {
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     font-size: 18px;
 }
  /* repl output */
 .output {
     font-size: 16px;
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     line-height: 20px;
 }
 .py-repl-output {
     font-size: 16px;
-    font-family: monospace, Consolas, 'Courier New', Courier;
+    font-family: Menlo, 'Droid Sans Mono', Consolas, monospace;
     line-height: 20px;
 }
 /* .py-terminal {
